@@ -11,12 +11,15 @@
 /* ************************************************************************** */
 int ft_atoi(char *str)
 {
-	int i = 0, n = 0;
+	int i;
+        int n;
 
+	i = 0;
+	n = 0;
 	if (str[0] == '-' && str[1] >= '0' && str[1] <= '9')
  	{
 		 n = ft_atoi(++str);
-		 return (n * -1);
+		 return ((n * -1);
  	}
 	 else if (str[0] != '-')
  	{
@@ -27,7 +30,7 @@ int ft_atoi(char *str)
  		}
  	}
 
-	return n;
+	return (n);
 }
 
 

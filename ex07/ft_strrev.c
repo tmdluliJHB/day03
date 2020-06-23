@@ -11,8 +11,8 @@
 /* ************************************************************************** */
 char *ft_strrev(char *str)
 {
-    // variable to store the length of str
-    int len = 0;
+    int len;
+    len = 0;
     
     while(*str != '\0')
     {
@@ -25,5 +25,5 @@ char *ft_strrev(char *str)
     for(int i = len - 1; i >= 0; i--)
         str_temp[i] = str[i];
 
-	return str_temp;
+	return (str_temp);
 }

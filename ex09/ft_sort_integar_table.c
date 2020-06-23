@@ -11,14 +11,16 @@
 /* ************************************************************************** */
 void swap(int *a, int *b)
 {
-	int temp = *a;
+	int temp;
+        temp = *a;
 	*a = *b;
 	*b = temp;
 }
 
 void ft_sort_integar_table(int *tab, int size)
 {
-	int i, j;
+	int i;
+	int j;
 
 	i = 0;
 	while(i < size)
